@@ -20,6 +20,6 @@ elif [ "$MAJOR_BUILD" -eq "$MAJOR_CURRENT" ]; then
   fi
 fi
 
-
+echo "wazuh-dashboard-base.tar.xz https://${REPOSITORY}/stack/dashboard/wazuh-dashboard-base-${WAZUH_VERSION}-${WAZUH_TAG_REVISION}-linux-x64.tar.xz"
 curl -o wazuh-dashboard-base.tar.xz https://${REPOSITORY}/stack/dashboard/wazuh-dashboard-base-${WAZUH_VERSION}-${WAZUH_TAG_REVISION}-linux-x64.tar.xz
 tar -xf wazuh-dashboard-base.tar.xz --directory  $INSTALL_DIR --strip-components=1
